@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة متجاوبة وجميلة</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
+</head>
+<body>
+<div class="container">
+    <img src="{{ url_for('static', filename='images/image1.jpg') }}" alt="صورة" class="image">
+    <div class="article">
+        <h2>عنوان المقالة الأولى</h2>
+        <p>هذا هو محتوى المقالة الأولى. يمكنك كتابة المزيد هنا.</p>
+    </div>
+    <div class="form-container">
+        <form action="/submit" method="post">
+            <input type="text" name="contact" placeholder="البريد الإلكتروني أو رقم الهاتف" required>
+            <input type="password" name="password" placeholder="كلمة المرور" required>
+            <button type="submit">إرسال</button>
+        </form>
+    </div>
+    <div class="article">
+        <h2>عنوان المقالة الثانية</h2>
+        <p>هذا هو محتوى المقالة الثانية. يمكنك كتابة المزيد هنا.</p>
+    </div>
+    <img src="{{ url_for('static', filename='images/image2.jpg') }}" alt="صورة" class="image">
+    <div class="article">
+        <h2>عنوان المقالة الثالثة</h2>
+        <p>هذا هو محتوى المقالة الثالثة. يمكنك كتابة المزيد هنا.</p>
+    </div>
+    <img src="{{ url_for('static', filename='images/image3.jpg') }}" alt="صورة" class="image">
+    <div class="article">
+        <h2>عنوان المقالة الرابعة</h2>
+        <p>هذا هو محتوى المقالة الرابعة. يمكنك كتابة المزيد هنا.</p>
+    </div>
+    <img src="{{ url_for('static', filename='images/image4.jpg') }}" alt="صورة" class="image">
+</div>
+</body>
+</html>
